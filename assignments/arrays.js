@@ -70,16 +70,13 @@ let inventorySearchResult = inventory.filter(function (vehicle) {
 let inventorySearch = inventorySearchResult[0];
 console.log(`Car 33 is a ${inventorySearch["car_year"]} ${inventorySearch["car_make"]} ${inventorySearch["car_model"]}`);
 
-// let inventorySearch = inventory.map(function () {
-//     console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*`);
-// })
 
 
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log();
+let lastCar = (inventory.slice(-1)[0]);
+console.log(`${lastCar["car_make"]} ${lastCar["car_model"]}`);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
